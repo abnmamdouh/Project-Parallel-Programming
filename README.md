@@ -10,6 +10,5 @@ A web crawler is a script that automatically visits web pages, extracts data, an
  (a) Set Up a Queue for URLs- Use BlockingQueue<String> to hold URLs- The main thread adds new URLs, worker threads process them
  (b) Implement the Crawler Worker Thread- Extracts a URL from the queue- Fetches the webpage using Jsoup- Extracts data (e.g., links, text, images)- Adds new links to the queue- Marks URLs as visited
  (c) Manage Multithreading with ExecutorService- Use Executors.newFixedThreadPool(NUM_THREADS) to create multiple threads
- (d) Handle Edge Cases
-- Avoid duplicate links using ConcurrentHashMap- Respect robots.txt- Manage errors and timeouts
+ (d) Handle Edge Cases - Avoid duplicate links using ConcurrentHashMap- Respect robots.txt- Manage errors and timeouts
   
